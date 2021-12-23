@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Open+Sans&family=Pushster&family=Source+Sans+3:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Autocompleted</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contant">
+        <h1>Hey This Is Autocompleted Project</h1>
+        <input placeholder="Search Your State Name..." class="js-search" id="search" type="text" />
+        <i class="fa fa-search"></i>
+        <div id="match-list"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+<style>
+ * {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    #274b74 0%,
+    #8233c5 50%,
+    #e963fd 100%
+  );
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contant {
+  text-align: center;
+  margin-top: 20px;
+}
+.contant h1 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-family: "Pushster", cursive;
+}
+input[type="text"] {
+  position: relative;
+  padding: 15px 40px 15px 20px;
+  width: 20px;
+  color: #525252;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ffffff 0%, #464747 #f9f9f9 100%);
+  transition: width 0.4s ease;
+  outline: none;
+}
+input[type="text"]:focus {
+  width: 300px;
+}
+i {
+  position: relative;
+  left: -37px;
+  color: #8233c5;
+}
+#match-list{
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: #fff;
+  width: 50%;
+  margin: 10px auto;
+  padding: 5px 0;
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 35px;
+}
+
+</style>
