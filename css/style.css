@@ -99,3 +99,14 @@ h1 {
   color: #644bff;
   cursor: pointer;
 }
+@media(max-width:500px){
+  body{
+    padding: 10px;
+  }
+  .wrapper {
+    margin: 0px auto;
+}
+  h1 {
+    font-size: 30px;
+  }
+}
